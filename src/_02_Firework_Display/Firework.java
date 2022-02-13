@@ -14,7 +14,7 @@ public class Firework{
     public static final int GRAVITY = 1;
 
     // 1. Create an array of Spark objects called sparks. Don't initialize it.
-
+Spark[] sparks;
     public boolean dead = false;
 
     public Firework() {
