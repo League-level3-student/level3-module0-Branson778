@@ -23,11 +23,11 @@ Color[][] colorss = new Color[WIDTH][HEIGHT];
         //    colors[i][j] = new Color(i % 256, (i * j) % 256, j % 256);
 for (int i = 0; i < colorss.length; i++) {
 	for (int j = 0; j < colorss[i].length; j++) {
-		colorss[i][j] = new Color(i % 256, (i * j) % 256, j % 256);
+		colorss[i][j] = new Color((i * 47) % 256, ((i * j)* 17) % 256, (j * 14) % 256);
 	}
 }
         // 5. Come up with your own pattern to make a cool crazy image.
-
+//done
         // 6. Use the ColorArrayDisplayer class to call the displayColorsAsImage method 
         //    to show off your picture.
 //done
