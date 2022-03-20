@@ -113,7 +113,7 @@ cellss = new Cell[cpr][cpr];
         // 8. check if each cell should live or die
 for (int i = 0; i < WorldPanel.cellss.length; i++) {
 	for (int j = 0; j < WorldPanel.cellss[i].length; j++) {
-		WorldPanel.cellss[i][j].liveOrDie(livingNeighbors[i][j],i,j);
+		WorldPanel.cellss[i][j].liveOrDie(livingNeighbors[i][j]);
 	}
 }
         repaint();

@@ -26,8 +26,8 @@ public class Cell implements Drawable{
      * 1. Any live cell with fewer than two live nieghbours dies, as if caused
      * by underpopulation.
      * done
-     * 2. Any live cell with two or three live neighbours lives on to the next
-     * generation.
+     * 2. Any o the next
+     * generation.live cell with two or three live neighbours lives on t
      * done
      * 3. Any live cell with more than three live neighbours dies, as if by
      * overpopulation.
@@ -37,23 +37,19 @@ public class Cell implements Drawable{
      * (source: Wikipedia) 
      * done
      */
-    public void liveOrDie(int numNeighbors, int i, int j) {
- 				if(numNeighbors<2){
-			   		WorldPanel.cellss[i][j].isAlive = false;
- 				}
- 				else if(numNeighbors==2 || numNeighbors==3){
- 					WorldPanel.cellss[i][j].isAlive = true;
- 				}
- 				else if(numNeighbors>3){
- 					WorldPanel.cellss[i][j].isAlive = false;
- 				}
- 				else if(numNeighbors==3 && WorldPanel.cellss[i][j].isAlive == false){
- 					WorldPanel.cellss[i][j].isAlive = true;
- 				}
- 				else {
- 					System.out.println("Error");
- 				}
- 				}
+    public void liveOrDie(int numNeighbors) {
+  if(isAlive) {
+	  if(numNeighbors<2 || numNeighbors > 3) {
+		  isAlive = false;
+		 
+	  }
+  }
+  else {
+	  if(numNeighbors==3) {
+		  isAlive = true;
+	  }
+  }
+  	}
  			
     
 
